@@ -17,4 +17,6 @@ def search_item(item_id: str) -> dict:
 if __name__ == "__main__":
     # Add the code for the barcode scanner here.
     item_barcode = "720825548692"
-    search_item(item_barcode)
+    result = search_item(item_barcode)
+    print(f'Item: {result["title"]}')
+    
